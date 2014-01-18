@@ -82,6 +82,7 @@ provided by =inf-ruby=.
 Oh-my-emacs also bind =C-c C-z= to =run-ruby=, instead of the original
 =ruby-switch-to-inf= to make the workflow smoother when you just want to
 evaluate ruby code snippets.
+Emacs with the Ruby Version Manager ( rvm ).
 
 #+NAME: inf-ruby
 #+BEGIN_SRC emacs-lisp
@@ -93,6 +94,8 @@ evaluate ruby code snippets.
       (setq inf-ruby-default-implementation "pry")))
 
   (ome-install 'inf-ruby)
+  (ome-install 'rvm)
+  (rvm-use-default)
 #+END_SRC
 
 * Smartparens-ruby
